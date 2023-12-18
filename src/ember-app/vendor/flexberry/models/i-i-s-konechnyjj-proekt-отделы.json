@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISKonechnyjj_proektОтделы",
+  "modelName": "i-i-s-konechnyjj-proekt-отделы",
+  "className": "Отделы",
+  "nameSpace": "IIS.Konechnyjj_proekt",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "котОтдела",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОтделыE",
+      "modelName": "i-i-s-konechnyjj-proekt-отделы",
+      "attrs": [
+        {
+          "name": "котОтдела",
+          "caption": "Код отдела",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ОтделыL",
+      "modelName": "i-i-s-konechnyjj-proekt-отделы",
+      "attrs": [
+        {
+          "name": "котОтдела",
+          "caption": "Код отдела",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

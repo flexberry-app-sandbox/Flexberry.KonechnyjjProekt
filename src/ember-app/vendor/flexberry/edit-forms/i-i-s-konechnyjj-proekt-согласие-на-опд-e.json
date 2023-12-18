@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудники",
+      "projection": "СотрудникиL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Согласие на опд",
+  "name": "IISKonechnyjj_proektСогласиеНаОпдE",
+  "className": "СогласиеНаОпдE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-konechnyjj-proekt-согласие-на-опд",
+      "modelProjection": "СогласиеНаОпдE"
+    }
+  ]
+}

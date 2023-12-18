@@ -1,0 +1,65 @@
+﻿{
+  "applicationCaption": "Модуль КЭДО",
+  "applicationTitle": "Konechnyjj_proekt",
+  "items": [
+    {
+      "link": null,
+      "menuName": "кадровые-документы",
+      "caption": "Кадровые документы",
+      "title": "Кадровые документы",
+      "children": [
+        {
+          "link": "i-i-s-konechnyjj-proekt-согласие-на-опд-l",
+          "menuName": null,
+          "caption": "Согласие на опд",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-konechnyjj-proekt-должности-l",
+          "menuName": null,
+          "caption": "Должности",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-konechnyjj-proekt-графики-отпуска-l",
+          "menuName": null,
+          "caption": "Графики отпуска",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-konechnyjj-proekt-отделы-l",
+          "menuName": null,
+          "caption": "Отделы",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-konechnyjj-proekt-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "зарплатные-документы",
+      "caption": "Зарплатные документы",
+      "title": "Зарплатные документы",
+      "children": [
+        {
+          "link": "i-i-s-konechnyjj-proekt-расчетный-лист-l",
+          "menuName": null,
+          "caption": "Расчетный лист",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

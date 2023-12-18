@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-konechnyjj-proekt-согласие-на-опд-e",
+  "editForm": "i-i-s-konechnyjj-proekt-согласие-на-опд-e",
+  "external": false,
+  "caption": "Согласие на опд",
+  "name": "IISKonechnyjj_proektСогласиеНаОпдL",
+  "className": "СогласиеНаОпдL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-konechnyjj-proekt-согласие-на-опд",
+      "modelProjection": "СогласиеНаОпдL"
+    }
+  ]
+}

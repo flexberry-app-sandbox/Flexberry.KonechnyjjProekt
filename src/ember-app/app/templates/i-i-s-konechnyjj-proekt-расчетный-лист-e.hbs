@@ -1,0 +1,120 @@
+<h3 class="ui header">{{t "forms.i-i-s-konechnyjj-proekt-расчетный-лист-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номерДок
+      class=(if (v-get validationModel "номерДок" "isInvalid") "error")
+      label=(t "forms.i-i-s-konechnyjj-proekt-расчетный-лист-e.номерДок-caption")
+      data-test-i-i-s-konechnyjj-proekt-расчетный-лист-e-номерДок=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номерДок" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-konechnyjj-proekt-расчетный-лист-e.дата-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.дата
+      class=(if (v-get validationModel "дата" "isInvalid") "error")
+      data-test-i-i-s-konechnyjj-proekt-расчетный-лист-e-дата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.итогоНачис
+      class=(if (v-get validationModel "итогоНачис" "isInvalid") "error")
+      label=(t "forms.i-i-s-konechnyjj-proekt-расчетный-лист-e.итогоНачис-caption")
+      data-test-i-i-s-konechnyjj-proekt-расчетный-лист-e-итогоНачис=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "итогоНачис" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.итогоУдер
+      class=(if (v-get validationModel "итогоУдер" "isInvalid") "error")
+      label=(t "forms.i-i-s-konechnyjj-proekt-расчетный-лист-e.итогоУдер-caption")
+      data-test-i-i-s-konechnyjj-proekt-расчетный-лист-e-итогоУдер=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "итогоУдер" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.итогоКПере
+      class=(if (v-get validationModel "итогоКПере" "isInvalid") "error")
+      label=(t "forms.i-i-s-konechnyjj-proekt-расчетный-лист-e.итогоКПере-caption")
+      data-test-i-i-s-konechnyjj-proekt-расчетный-лист-e-итогоКПере=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "итогоКПере" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-konechnyjj-proekt-расчетный-лист-e.отправлено-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.отправлено
+      class=(if (v-get validationModel "отправлено" "isInvalid") "error")
+      data-test-i-i-s-konechnyjj-proekt-расчетный-лист-e-отправлено=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "отправлено" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-konechnyjj-proekt-расчетный-лист-e.сотрудники-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.сотрудники
+      displayAttributeName="фамилия"
+      autocomplete=true
+      relationName="сотрудники"
+      projection="СотрудникиL"
+      title=(t "forms.i-i-s-konechnyjj-proekt-расчетный-лист-e.сотрудники-caption")
+      readonly=readonly
+      componentName="сотрудникиLookup"
+      class=(if (v-get validationModel "сотрудники" "isInvalid") "error")
+      data-test-i-i-s-konechnyjj-proekt-расчетный-лист-e-сотрудники=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "сотрудники" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-konechnyjj-proekt-расчетный-лист-e.составРасчета-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="составРасчетаGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.составРасчета
+      content=model.составРасчета
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "составРасчета" "isInvalid") "error")
+      data-test-i-i-s-konechnyjj-proekt-расчетный-лист-e-составРасчета=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "составРасчета" "message")}}
+  </div>
+</form>
