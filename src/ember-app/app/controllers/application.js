@@ -28,24 +28,25 @@ export default Controller.extend({
             link: 'i-i-s-konechnyjj-proekt-согласие-на-опд-l',
             caption: i18n.t('forms.application.sitemap.кадровые-документы.i-i-s-konechnyjj-proekt-согласие-на-опд-l.caption'),
             title: i18n.t('forms.application.sitemap.кадровые-документы.i-i-s-konechnyjj-proekt-согласие-на-опд-l.title'),
-            icon: 'chart bar',
+            icon: 'book',
             children: null
           }, {
             link: 'i-i-s-konechnyjj-proekt-должности-l',
             caption: i18n.t('forms.application.sitemap.кадровые-документы.i-i-s-konechnyjj-proekt-должности-l.caption'),
             title: i18n.t('forms.application.sitemap.кадровые-документы.i-i-s-konechnyjj-proekt-должности-l.title'),
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-konechnyjj-proekt-графики-отпуска-l',
             caption: i18n.t('forms.application.sitemap.кадровые-документы.i-i-s-konechnyjj-proekt-графики-отпуска-l.caption'),
             title: i18n.t('forms.application.sitemap.кадровые-документы.i-i-s-konechnyjj-proekt-графики-отпуска-l.title'),
-            icon: 'table',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-konechnyjj-proekt-отделы-l',
             caption: i18n.t('forms.application.sitemap.кадровые-документы.i-i-s-konechnyjj-proekt-отделы-l.caption'),
             title: i18n.t('forms.application.sitemap.кадровые-документы.i-i-s-konechnyjj-proekt-отделы-l.title'),
-            icon: 'folder open',
+            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-konechnyjj-proekt-сотрудники-l',
@@ -63,7 +64,7 @@ export default Controller.extend({
             link: 'i-i-s-konechnyjj-proekt-расчетный-лист-l',
             caption: i18n.t('forms.application.sitemap.зарплатные-документы.i-i-s-konechnyjj-proekt-расчетный-лист-l.caption'),
             title: i18n.t('forms.application.sitemap.зарплатные-документы.i-i-s-konechnyjj-proekt-расчетный-лист-l.title'),
-            icon: 'book',
+            icon: 'building',
             children: null
           }]
         }
